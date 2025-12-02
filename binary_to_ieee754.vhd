@@ -12,22 +12,22 @@ use ieee.std_logic_textio.all;
 
 entity binary_to_ieee754 is
 generic(
-	INTEGER_BITS	: integer := 16;
-	FRACTIONAL_BITS	: integer := 16
+	INTEGER_BITS		: integer := 16;
+	FRACTIONAL_BITS		: integer := 16
 );
 port(
-	reset			: in 	std_logic;
-	clock			: in 	std_logic;
+	reset				: in 	std_logic;
+	clock				: in 	std_logic;
 	-- External bus input
-	data_in_tready	: out	std_logic;
-	data_in_tvalid	: in	std_logic;
-	data_in_tdata	: in	std_logic_vector(31 downto 0);
-	data_in_tlast	: in	std_logic;
+	data_in_tready		: out	std_logic;
+	data_in_tvalid		: in	std_logic;
+	data_in_tdata		: in	std_logic_vector(31 downto 0);
+	data_in_tlast		: in	std_logic;
 	-- External bus output
-	data_out_tready	: in	std_logic;
-	data_out_tvalid	: out	std_logic;
-	data_out_tdata	: out	std_logic_vector(31 downto 0);
-	data_out_tlast	: out	std_logic;
+	data_out_tready		: in	std_logic;
+	data_out_tvalid		: out	std_logic;
+	data_out_tdata		: out	std_logic_vector(31 downto 0);
+	data_out_tlast		: out	std_logic;
 	tdata_input_values	: out	std_logic_vector(31 downto 0);
 	raw_input_tdata		: out	std_logic_vector(31 downto 0);
 	ieee754_data_out	: out	std_logic_vector(31 downto 0)
@@ -192,7 +192,7 @@ begin
 			
 	-- Calculate the IEEE754 value
 	ieee754_sign_bit	<= sign_bit_value;
-	ieee754_exponent	<= std_logic_vector(unsigned(tdata_msb_value(7 downto 0)) + to_unsigned(127, 8));
+	ieee754_exponent	<= std_logic_vector(unsigned(tdata_msb_value(7 downto 0)) + to_unsigned(127-FRACTIONAL_BITS, 8));
 	ieee754_mantissa	<= mantissa_value;
 
 	output_registers : process (clock)
