@@ -1,0 +1,58 @@
+C:/Users/ambig/source/RTL/VHDL/test_code/top_level_testbench.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ambig/source/RTL/VHDL/test_code/top_level_testbench.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package txt_util
+-- Loading package std_logic_textio
+-- Loading package system_header
+-- Compiling entity top_level_testbench
+-- Compiling architecture behavioral of top_level_testbench
+-- Loading entity top_level_code
+
+} {} {}} C:/Users/ambig/source/RTL/VHDL/test_code/system_header.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ambig/source/RTL/VHDL/test_code/system_header.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package txt_util
+-- Loading package std_logic_textio
+-- Compiling package system_header
+-- Compiling package body system_header
+-- Loading package system_header
+
+} {} {}} C:/Users/ambig/source/RTL/VHDL/test_code/txt_util.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ambig/source/RTL/VHDL/test_code/txt_util.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package txt_util
+-- Compiling package body txt_util
+-- Loading package txt_util
+
+} {} {}} C:/Users/ambig/source/RTL/VHDL/test_code/binary_to_ieee754.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ambig/source/RTL/VHDL/test_code/binary_to_ieee754.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package txt_util
+-- Loading package std_logic_textio
+-- Compiling entity binary_to_ieee754
+-- Compiling architecture struct of binary_to_ieee754
+
+} {} {}} C:/Users/ambig/source/RTL/VHDL/test_code/top_level_code.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ambig/source/RTL/VHDL/test_code/top_level_code.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package txt_util
+-- Loading package std_logic_textio
+-- Compiling entity top_level_code
+-- Compiling architecture struct of top_level_code
+-- Loading entity binary_to_ieee754
+
+} {} {}}
